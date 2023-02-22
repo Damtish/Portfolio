@@ -192,3 +192,172 @@ nav ul li a:hover::after{
     background: blueviolet;
     transform: translateY(-10px);
 }
+#portfolio{
+    padding: 50px 0;
+    align-items: center;
+}
+/* .container{
+    align-items: center;
+} */
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+/* .layer{ 
+    width: 100%;
+    height: 0; */
+    /* background: linear-gradient(rgba(0,0,0,0,6), rgb(0, 0, 0)); */
+    /* border-radius: 10px; */
+    /* position: absolute; */
+    /* left: 0;
+    bottom: 0; */
+    /* overflow: hidden; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* padding: 0 40px; */
+    /* text-align: center;
+    font: size 10px; ;
+    line-height: 60px;
+    transition: height 0.5s ;
+
+}  */
+.layer h3{
+    font-size:500 ;
+    margin-bottom: 20px;
+    color: blueviolet;
+    line-height: 15cqmax;
+}
+/* .layer p{ 
+    font-size:smaller;
+    color: ;
+    
+ }  */
+.layer a{
+    margin-top:200px ;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size:25px;
+    line-height: 60px;
+    background: blueviolet;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+
+
+
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: inline-block;
+    background: blueviolet;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid blueviolet;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: purple;
+    transition: background 0.5s ;
+   
+     
+}
+
+.btn:hover{
+    background: white;
+}
+
+
+/* -----------------contact------------------- */
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top:30px;
+}
+.contact-left p i{
+    color: blueviolet;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: blueviolet;
+    display: inline-block;
+    transition: transform 0.5s;
+    line-height: 6cqmax;
+}
+.social-icons a:hover{
+    color: purple;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: blueviolet;
+    transition: background 0.5s ;
+}
+.btn.btn2:hover{
+    background: rgb(34, 34, 34);
+}
+
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    color: blueviolet;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form btn2{
+padding: 14px 60px;
+font-size: 18px;
+margin-top: 20px;
+cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: blueviolet;
+    font-weight: 300;
+    margin-top: 20px;
+
+}
+.copyright i{
+    color: rgb(18, 9, 26);
+}
